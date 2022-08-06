@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Jaldi&display=swap');
+
+* {
+  font-family: 'Concert One', cursive !important;
+  font-family: 'Jaldi', sans-serif !important;
+}
+
+.nav-item {
+  min-width: 200px;
+  padding: 10px;
+  background-color: #004cff;
+  margin: 10px;
+  border: 20px;
+  color: white;
+  border-color: #ccc;
+  border: 0px;
+  font-size: 20px;
+
+  border-radius: 10px;
+  background-color: #004cff;
+}
+
+.danger {
+  color: #ea3943 !important;
+}
+
+.normal {
+  color: #16c784 !important;
+}
+
+.info {
+  color: #5c9dff;
+}
+
+.title-text {
+  color: rgb(161, 167, 187);
+}
+
+.css-nwgi28-MuiCircularProgress-root {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  background: #333;
+}
+
+.nav-item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+
+.mint-btn {
+  justify-self: flex-start;
+}
+
+.connect-address-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(102, 32, 32);
+  border-radius: 10px;
+  padding: 4px;
+  margin: 6px;
+  font-size: 20px;
+  border: solid #fff 2px;
+}
+
+.connected-button {
+  padding: 2px;
+  margin: 5px;
+  width: 35px;
+}
+
+.wallet-connect {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+}
+
+.main-section {
+  padding-top: 100px;
+}
+
+.item {
+  justify-content: center;
+  /* align-items: center; */
+  /* display: flex; */
+  display: grid;
+}
+
+.header-hero {
+  background-color: rgb(26 34 60) !important;
+}
+
+body {
+  /* background-color: #F5F5F5 !important; */
+  /* background-color: #151a30 !important; */
+  min-height: 100vh;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  color: white !important;
+} */
+
+.red {
+  color: red !important;
+}
+
+
+/* .css-hdw1oc {
+  display: none !important;
+} */
+
+.section-item {
+  background-color: rgb(26 34 60) !important;
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+    filter: blur(5);
+  }
+}
+
+.ping {
+  position: relative;
+  padding-left: 1em;
+  color: #16c784;
+  align-items: center;
+  display: flex;
+}
+
+.ping::before,
+.ping::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.ping::before {
+  animation: ping 1.2s ease infinite;
+  opacity: 0.25;
+}
+
+.title {
+  font-size: 20px !important;
+}
+
+.description {
+  font-size: 15px !important;
+}
+
+/* .css-12pstkr-MuiPaper-root-MuiDialog-paper {
+  background-color: rgb(18 22 36) !important;
+} */
+
+.css-13xfq8m-MuiTabPanel-root {
+  padding: 0px !important;
+}
+
+/* header {
+  background: #222b45 !important;
+}
+
+.item {
+  background: #222b45;
+  border-radius: 5px;
+} */
+
+
+.css-b2emf-MuiPaper-root {
+  background-image: none !important;
+}
+
+.shade {
+  background-color: #2a95ff;
+  color: white;
+}
+
+.shade1 {
+  background-color: #d5d5d5;
+}

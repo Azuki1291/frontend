@@ -63,7 +63,7 @@ export default function Header() {
                             <Box component="img" src={LogoImg}>
                             </Box>
                         </Link>
-                        <Search>
+                        {/* <Search>
                             <SearchIconWrapper>
                                 <SearchIcon />
                             </SearchIconWrapper>
@@ -71,7 +71,7 @@ export default function Header() {
                                 placeholder="Enter Contract Id"
                                 inputProps={{ 'aria-label': 'search' }}
                             />
-                        </Search>
+                        </Search> */}
 
                     </Stack>
                 </Container>

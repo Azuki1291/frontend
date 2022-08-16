@@ -98,7 +98,7 @@ export default function HomePage() {
                     {message.text}
                 </Alert>
             </Snackbar>
-            <Container maxWidth="lg">
+            <Container >
                 <Stack justifyContent="center">
 
                     <Grid container justifyContent="center" pt={3}>
@@ -111,67 +111,6 @@ export default function HomePage() {
                                 </Carousel>
                             </Stack>
                             <Stack spacing={5}>
-                                <Paper elevation={3}>
-                                    <Stack p={5} spacing={3}>
-                                        <Typography variant='h4' sx={{ fontWeight: 600 }}>Last Scans</Typography>
-                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
-                                            <Stack>
-                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>$PePe Coin ($PePe)</Typography>
-                                                <Link href={`https://bscscan.com/address/0xff593cb838547700c565024c42ce9a2a24511b01`} target="_blank">
-                                                    <Typography variant='h6' >0xff593cb838547700c565024c42ce9a2a24511b01</Typography>
-                                                </Link>
-                                                <Chip color="error" label="High Risk" />
-                                            </Stack>
-                                            <Stack justifyContent="flex-end">
-                                                <Button variant='contained' onClick={() => view("0xff593cb838547700c565024c42ce9a2a24511b01")}>View</Button>
-                                            </Stack>
-                                        </Stack>
-
-                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
-                                            <Stack>
-                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>DontKYC (DKYC)</Typography>
-                                                <Link href={`https://bscscan.com/address/0xdf5Fac537aa09e1eb0F3f8DD1d34CBdC42CA1076`} target="_blank">
-                                                    <Typography variant='h6' >0xdf5Fac537aa09e1eb0F3f8DD1d34CBdC42CA1076</Typography>
-                                                </Link>
-                                                <Chip color="warning" label="Medium Risk" />
-
-                                            </Stack>
-                                            <Stack justifyContent="flex-end">
-                                                <Button variant='contained' onClick={() => view("0xdf5Fac537aa09e1eb0F3f8DD1d34CBdC42CA1076")}>View</Button>
-                                            </Stack>
-                                        </Stack>
-
-                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
-                                            <Stack>
-                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>EOS Token (EOS)</Typography>
-                                                <Link href={`https://bscscan.com/address/0x56b6fb708fc5732dec1afc8d8556423a2edccbd6`} target="_blank">
-                                                    <Typography variant='h6' >0x56b6fb708fc5732dec1afc8d8556423a2edccbd6</Typography>
-                                                </Link>
-                                                <Chip color="success" label="Low Risk" />
-                                            </Stack>
-                                            <Stack justifyContent="flex-end">
-                                                <Button variant='contained' onClick={() => view("0x56b6fb708fc5732dec1afc8d8556423a2edccbd6")}>View</Button>
-                                            </Stack>
-                                        </Stack>
-
-
-                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
-                                            <Stack>
-                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>PancakeSwap Token  (Cake)</Typography>
-                                                <Link href={`https://bscscan.com/address/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82`} target="_blank">
-                                                    <Typography variant='h6' >0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82</Typography>
-                                                </Link>
-                                                <Chip color="success" label="Low Risk" />
-
-                                            </Stack>
-                                            <Stack justifyContent="flex-end">
-                                                <Button variant='contained' onClick={() => view("0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82")}>View</Button>
-                                            </Stack>
-                                        </Stack>
-
-                                    </Stack>
-                                </Paper>
-
 
                                 <Paper elevation={3}>
                                     <Stack p={5} spacing={3}>
@@ -194,6 +133,66 @@ export default function HomePage() {
 
                                 <Paper elevation={3}>
                                     <Stack p={5} spacing={3}>
+                                        <Typography variant='h4' sx={{ fontWeight: 600 }}>Last Scans</Typography>
+                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
+                                            <Stack>
+                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>$PePe Coin ($PePe)</Typography>
+                                                <Link href={`https://bscscan.com/address/0xff593cb838547700c565024c42ce9a2a24511b01`} target="_blank">
+                                                    <Typography variant='h6' >0xff593c...24511b01</Typography>
+                                                </Link>
+                                                <Chip color="error" label="High Risk" />
+                                            </Stack>
+                                            <Stack justifyContent="flex-end">
+                                                <Button variant='contained' onClick={() => view("0xff593cb838547700c565024c42ce9a2a24511b01")}>View</Button>
+                                            </Stack>
+                                        </Stack>
+
+                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
+                                            <Stack>
+                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>DontKYC (DKYC)</Typography>
+                                                <Link href={`https://bscscan.com/address/0xdf5Fac537aa09e1eb0F3f8DD1d34CBdC42CA1076`} target="_blank">
+                                                    <Typography variant='h6' >0xdf5Fac...C42CA1076</Typography>
+                                                </Link>
+                                                <Chip color="warning" label="Medium Risk" />
+
+                                            </Stack>
+                                            <Stack justifyContent="flex-end">
+                                                <Button variant='contained' onClick={() => view("0xdf5Fac537aa09e1eb0F3f8DD1d34CBdC42CA1076")}>View</Button>
+                                            </Stack>
+                                        </Stack>
+
+                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
+                                            <Stack>
+                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>EOS Token (EOS)</Typography>
+                                                <Link href={`https://bscscan.com/address/0x56b6fb708fc5732dec1afc8d8556423a2edccbd6`} target="_blank">
+                                                    <Typography variant='h6' >0x56b6fb...2edccbd6</Typography>
+                                                </Link>
+                                                <Chip color="success" label="Low Risk" />
+                                            </Stack>
+                                            <Stack justifyContent="flex-end">
+                                                <Button variant='contained' onClick={() => view("0x56b6fb708fc5732dec1afc8d8556423a2edccbd6")}>View</Button>
+                                            </Stack>
+                                        </Stack>
+
+
+                                        <Stack direction="row" justifyContent="space-between" sx={{ background: "#d1d1d1", padding: "12px", borderRadius: "10px" }}>
+                                            <Stack>
+                                                <Typography variant='h5' sx={{ fontWeight: 600 }}>PancakeSwap Token (Cake)</Typography>
+                                                <Link href={`https://bscscan.com/address/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82`} target="_blank">
+                                                    <Typography variant='h6' >0x0e09f...e81ce82</Typography>
+                                                </Link>
+                                                <Chip color="success" label="Low Risk" />
+                                            </Stack>
+                                            <Stack justifyContent="flex-end">
+                                                <Button variant='contained' onClick={() => view("0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82")}>View</Button>
+                                            </Stack>
+                                        </Stack>
+
+                                    </Stack>
+                                </Paper>
+
+                                <Paper elevation={3}>
+                                    <Stack p={5} spacing={3}>
                                         <Typography variant='h4' sx={{ fontWeight: 600 }}>Contract Information</Typography>
                                         {
                                             contractData.name ?
@@ -205,7 +204,7 @@ export default function HomePage() {
                                                         </Stack>
 
                                                         <Link href={`https://bscscan.com/address/${contract}`} target="_blank">
-                                                            <Typography variant='h6' >{contract}</Typography>
+                                                            <Typography variant='h6' >{`${contract?.substr(0, 10)}...${contract?.substr(contract?.length - 10)}`}</Typography>
                                                         </Link>
                                                         <Stack pb={3}></Stack>
                                                         <Stack >
@@ -244,21 +243,6 @@ export default function HomePage() {
                                                         </Stack>
                                                     </Stack>
                                                     <Stack sx={{ boxShadow: "5px 4px 10px 1px #383838", borderRadius: "10px" }}>
-                                                        {/* <Typography variant='h5' sx={{ fontWeight: 600 }}>Token Information</Typography> */}
-                                                        {/* <Stack direction="row" p={1} className="shade" borderBottom="1px dashed grey" sx={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} justifyContent="space-between">
-                                                                <Typography variant='h6' >Contract</Typography>
-                                                                <Typography variant='h6'><strong>{contract}</strong></Typography>
-                                                            </Stack> */}
-
-                                                        {/* <Stack direction="row" p={1} className="shade1" borderBottom="1px dashed grey" justifyContent="space-between">
-                                                                <Typography variant='h6' >Name</Typography>
-                                                                <Typography variant='h6'><strong>{contractData?.name}</strong></Typography>
-                                                            </Stack>
-
-                                                            <Stack direction="row" p={1} className="shade" borderBottom="1px dashed grey" justifyContent="space-between">
-                                                                <Typography variant='h6' >Symbol</Typography>
-                                                                <Typography variant='h6'><strong>{contractData?.symbol}</strong></Typography>
-                                                            </Stack> */}
                                                         <Stack direction="row" p={1} className="shade" borderBottom="1px dashed grey" sx={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} justifyContent="space-between">
                                                             <Typography variant='h6' >Total supply</Typography>
                                                             <Typography variant='h6'><strong>{contractData?.intTotalSupply}</strong></Typography>
@@ -309,13 +293,7 @@ export default function HomePage() {
                                                             <Typography variant='h6'><strong>{contractData?.intTotalSupply - contractData?.intBurned}</strong></Typography>
                                                         </Stack>
 
-                                                        {/* <Stack direction="row" p={1} className="shade1" sx={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px" }} justifyContent="space-between">
-                                                                <Typography variant='h6' >Decimals</Typography>
-                                                                <Typography variant='h6'><strong>{contractData?.decimals}</strong></Typography>
-                                                            </Stack> */}
-
                                                     </Stack>
-                                                    {/* <Stack pb={3}></Stack> */}
                                                     <Stack>
                                                         <Typography variant='h5' sx={{ fontWeight: 600 }}>Honeypot Check </Typography>
                                                         <Stack pt={3} spacing={1}>
@@ -344,21 +322,12 @@ export default function HomePage() {
                                                                     <Typography variant='h6' >Buy Tax </Typography>
                                                                     <Typography variant='h6'><strong>{Number(contractData?.BuyTax)} % buy tax</strong></Typography>
                                                                 </Stack>
-                                                                {/* 
-                                                                <Stack direction="row" p={1} className="shade" borderBottom="1px dashed grey" justifyContent="space-between">
-                                                                    <Typography variant='h6' >Buy Gas</Typography>
-                                                                    <Typography variant='h6'><strong>{contractData?.BuyGas}</strong></Typography>
-                                                                </Stack> */}
 
                                                                 <Stack direction="row" p={1} className="shade" borderBottom="1px dashed grey" sx={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px" }} justifyContent="space-between">
                                                                     <Typography variant='h6' >Sell Tax</Typography>
                                                                     <Typography variant='h6'><strong>{Number(contractData?.SellTax)} % sell tax </strong></Typography>
                                                                 </Stack>
 
-                                                                {/* <Stack direction="row" p={1} className="shade" sx={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px" }} justifyContent="space-between">
-                                                                    <Typography variant='h6' >Sell Gas</Typography>
-                                                                    <Typography variant='h6'><strong>{contractData?.SellGas}</strong></Typography>
-                                                                </Stack> */}
                                                             </Stack>
                                                         </Stack>
                                                     </Stack>
@@ -402,18 +371,11 @@ export default function HomePage() {
                                                                     <Typography variant='h6' >{contractData?.symbol} / BNB Pool </Typography>
                                                                     <Typography variant='h6'><strong>{contractData?.dexData?.liquidityETH?.toFixed(5)} BNB ($ {contractData?.dexData?.liquidityUSD})</strong></Typography>
                                                                 </Stack>
-
-                                                                {/* <Stack direction="row" p={1} className="shade1" borderBottom="1px dashed grey" sx={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px" }} justifyContent="space-between">
-                                                                    <Typography variant='h6' >{contractData?.symbol} / BUSD Pool</Typography>
-                                                                    <Typography variant='h6'><strong>0 BUSD ($ 0)</strong></Typography>
-                                                                </Stack> */}
-
                                                             </Stack>
                                                         </Stack>
 
                                                     </Stack>
 
-                                                    {console.log(contractData, "contractData")}
                                                 </Stack>
 
                                                 :
